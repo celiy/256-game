@@ -46,50 +46,20 @@ p{
     height: auto;
 }
 
-.game-tile-1{
+.unselected{
     background-color: #101010;
-    width: var(--gtw);
-    height: var(--gth);
 }
-.game-tile-2{
-    background-color: #101010;
-    width: var(--gtw);
-    height: var(--gth);
+
+.selected{
+    background-color: red;
 }
-.game-tile-3{
-    background-color: #101010;
+
+.game-tile{
+    align-content: center;
+    justify-items: center;
     width: var(--gtw);
     height: var(--gth);
-}
-.game-tile-4{
-    background-color: #101010;
-    width: var(--gtw);
-    height: var(--gth);
-}
-.game-tile-5{
-    background-color: #101010;
-    width: var(--gtw);
-    height: var(--gth);
-}
-.game-tile-6{
-    background-color: #101010;
-    width: var(--gtw);
-    height: var(--gth);
-}
-.game-tile-7{
-    background-color: #101010;
-    width: var(--gtw);
-    height: var(--gth);
-}
-.game-tile-8{
-    background-color: #101010;
-    width: var(--gtw);
-    height: var(--gth);
-}
-.game-tile-9{
-    background-color: #101010;
-    width: var(--gtw);
-    height: var(--gth);
+    transition: all 0.2s;
 }
 
 .game-inventory{
@@ -101,18 +71,9 @@ p{
     height: 25vh;
 }
 
-.game-inv-tile-1{
-    background-color: #101010;
-    width: var(--gtw);
-    height: var(--gth);
-}
-.game-inv-tile-2{
-    background-color: #101010;
-    width: var(--gtw);
-    height: var(--gth);
-}
-.game-inv-tile-3{
-    background-color: #101010;
+.game-inv-tile{
+    align-content: center;
+    justify-items: center;
     width: var(--gtw);
     height: var(--gth);
 }
