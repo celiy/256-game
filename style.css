@@ -1,11 +1,11 @@
 :root{
-    --eerie: #181a1b;
-    --chibla: #131516;
+    --eerie: #212425;
+    --eerie2: #131414;
+    --chibla: #1b1d1f;
+    --chibla2: #362d2d;
     --charcoal: #202020;
     --coarent: #333131;
     --sunset: #ff5757;
-    --gtw: 180px;
-    --gth: 180px;
 }
 
 p{
@@ -14,19 +14,56 @@ p{
     color: white;
 }
 
+.op0{
+    opacity: 0;
+    transition: all 0.6s;
+}
+.op1{
+    opacity: 1;
+    transition: all 0.6s;
+}
+.game-state{
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: #181414b9;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    align-content: center;
+    justify-items: center;
+    transition: all 0.6s;
+} .restart {
+    align-content: center;
+    justify-items: center;
+    padding: 1rem;
+    margin-top: 1vw;
+    background-color: #131414;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+} .restart p {
+    font-size: 1.4rem;
+} .restart:hover{
+    background-color: #202222;
+}
+
 .main{
-    margin-top: 10vh;
     display: grid;
     justify-self: center;
-    background-color: #404040;
+    background-color: var(--eerie);
+    height: 98vh;
+    border-color: var(--eerie2);
+    border-style: solid;
+    border-width: 1vh;
 }
 
 .menu-header{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 10%;
+    justify-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: #303030;
 }
 .title{
     color: white;
@@ -40,40 +77,71 @@ p{
 
 .game-primary{
     display: grid;
+    padding-left: 1rem;
+    padding-right: 1rem;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
-    background-color: #202020;
+    background-color: var(--eerie);
     height: auto;
 }
 
-.unselected{
-    background-color: #101010;
+.border{
+    height: 160px;
+    width: 160px;
+    align-content: center;
+    justify-items: center;
+    background-color: var(--eerie2);
 }
 
+.unselected{
+    background-color: var(--chibla);
+    width: 140px;
+    height: 140px;
+} .unselected:hover {
+    width: 132px;
+    height: 132px;
+    background-color: var(--chibla2);
+} .unselected p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    color: white;
+    transition: all 0.2s;
+}
 .selected{
-    background-color: red;
+    width: 146px;
+    height: 146px;
+    background-color: var(--sunset);
+} .selected p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.4rem;
+    color: white;
+    transition: all 0.2s;
 }
 
 .game-tile{
     align-content: center;
     justify-items: center;
-    width: var(--gtw);
-    height: var(--gth);
     transition: all 0.2s;
 }
 
+.separation{
+    width: 100%;
+    height: 8%;
+    background-color: var(--chibla);
+}
+
 .game-inventory{
-    margin-top: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
-    background-color: #303030;
-    height: 25vh;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: var(--eerie);
+    transition: all 0.2s;
 }
 
 .game-inv-tile{
     align-content: center;
     justify-items: center;
-    width: var(--gtw);
-    height: var(--gth);
+    transition: all 0.2s;
 }

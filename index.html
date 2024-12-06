@@ -8,28 +8,61 @@
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <title>256</title>
 </head>
-<body>
+<body style="background-color: var(--eerie);">
+    <div class="game-state op0"> 
+        <p>Você perdeu!</p>
+        <a href="/" style="text-decoration: none;">
+            <div class="restart">
+                <p>Tentar de novo</p>
+            </div>
+        </a> 
+    </div>
     <div class="main">
         <div class="menu-header">
             <p class="title">256</p>
-            <p class="score">Score: 0</p>
-            <p class="best">Current: 0</p>
+            <p class="score">Pontos: 0</p>
+            <p class="best">Diogo V.</p>
         </div>
         <div class="game-primary">
-            <div class="game-tile unselected" id="1" onclick="addNum(1)"></div>
-            <div class="game-tile unselected" id="2" onclick="addNum(2)"></div>
-            <div class="game-tile unselected" id="3" onclick="addNum(3)"></div>
-            <div class="game-tile unselected" id="4" onclick="addNum(4)"></div>
-            <div class="game-tile unselected" id="5" onclick="addNum(5)"></div>
-            <div class="game-tile unselected" id="6" onclick="addNum(6)"></div>
-            <div class="game-tile unselected" id="7" onclick="addNum(7)"></div>
-            <div class="game-tile unselected" id="8" onclick="addNum(8)"></div>
-            <div class="game-tile unselected" id="9" onclick="addNum(9)"></div>
+            <div class="border">
+                <div class="game-tile unselected" id="1" onclick="addNum(1)"></div>
+            </div>
+            <div class="border">
+                <div class="game-tile unselected" id="2" onclick="addNum(2)"></div>
+            </div>
+            <div class="border">
+                <div class="game-tile unselected" id="3" onclick="addNum(3)"></div>
+            </div>
+            <div class="border">
+                <div class="game-tile unselected" id="4" onclick="addNum(4)"></div>
+            </div>
+            <div class="border">
+                <div class="game-tile unselected" id="5" onclick="addNum(5)"></div>
+            </div>
+            <div class="border">
+                <div class="game-tile unselected" id="6" onclick="addNum(6)"></div>
+            </div>
+            <div class="border">
+                <div class="game-tile unselected" id="7" onclick="addNum(7)"></div>
+            </div>
+            <div class="border">
+                <div class="game-tile unselected" id="8" onclick="addNum(8)"></div>
+            </div>
+            <div class="border">
+                <div class="game-tile unselected" id="9" onclick="addNum(9)"></div>
+            </div>
         </div>
+        <div class="separation"></div>
         <div class="game-inventory">
-            <div class="game-inv-tile unselected" id="10" onclick="selectNum(10)"></div>
-            <div class="game-inv-tile unselected" id="11" onclick="selectNum(11)"></div>
-            <div class="game-inv-tile unselected" id="12" onclick="selectNum(12)"></div>
+            <div class="border">
+                <div class="game-inv-tile unselected" id="10" onclick="selectNum(10)"></div>
+            </div>
+            <div class="border">
+                <div class="game-inv-tile unselected" id="11" onclick="selectNum(11)"></div>
+            </div>
+            <div class="border">
+                <div class="game-inv-tile unselected" id="12" onclick="selectNum(12)"></div>
+            </div>
         </div>
     </div>
     <script src="scripts.js"></script>
